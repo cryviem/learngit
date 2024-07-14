@@ -1,4 +1,4 @@
-include "stdio.h"
+#include "stdio.h"
 #include "jmath.h"
 
 #define MAX_INT  (int) 0x7FFFFFFF
@@ -27,7 +27,7 @@ int jmath_div(int a, int b)
 {
     if (b == 0)
     {
-        printf("jmath > error: div to 0\n")
+        printf("jmath > error: div to 0\n");
         return MAX_INT;
     } 
     return a / b;
